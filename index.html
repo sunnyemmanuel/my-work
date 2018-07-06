@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>commenting box</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+   <div class="container">
+    <h3 class="text-center">YOUR COMMENT</h3>
+   	<div class="middle">
+   		<form action="" method="" onclick="return van();" style="font-weight:bold;">
+   			<label>Name</label>
+   			<input class="form-control" type="text" name="" id="" placeholder="name">
+   			<label>Phone number</label>
+   			<input class="form-control" type="text" name="" id="" placeholder="phone number">
+   			<label>Email</label>
+   			<input class="form-control" type="email" name="" id="" placeholder="email"><br>
+   			<textarea class="tarea" id="tarea" type="comment" value="comment" style="background:lightgrey;width:300px;height:100px;"></textarea><br>
+            <span id="tet"></span>
+            <div class="butt">
+   			<input type="button" onclick="sav()" value="Save" id="save" class="btn-success">
+   			<input type="button" onclick="canc()" value="Cancel" id="Cancel" class="btn-cancel">
+            </div>
+   		</form>
+   	</div>
+   </div>
+   <noscript>Your browser does not support javascript</noscript>
+   <script type="text/javascript">
+      function van(){
+
+       var textarea= document.getElementById('tarea').value;
+       if (textarea="") {
+         document.getElementById("tet").innerHTML="please input something"
+       }
+
+      }
+     
+   </script>
+</body>
+</html>
